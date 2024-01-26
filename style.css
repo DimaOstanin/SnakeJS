@@ -1,89 +1,87 @@
-body{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100vh;
-   margin: 0; 
-   font-family: 'VT323', monospace;
-   background-color: #414141;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "VT323", monospace;
+  background-color: #414141;
 }
 body,
 .snake {
   background-color: #414141;
 }
 
-#game-board{
-    border-radius: 100px;
-    display: grid;
-    grid-template-columns: repeat(20,20px);
-    grid-template-rows: repeat(20,20px);
-    margin: 5px;
+#game-board {
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  margin: 5px;
 }
-.game-border-1{
-    border: #595f43 solid 10px;
-    border-radius: 30px;
-    box-shadow: inset 0 0 0 11px #595f43;
+.game-border-1 {
+  border: #595f43 solid 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 11px #595f43;
 }
-.game-border-2{
-    border: #abb78a solid 8px;
-    border-radius: 26px;
-    box-shadow: inset 0 0 0 11px #abb78a;
+.game-border-2 {
+  border: #abb78a solid 8px;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 11px #abb78a;
 }
-.game-border-3{
-    border: #8b966c solid 30px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 0 5px #8b966c;
+.game-border-3 {
+  border: #8b966c solid 30px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 5px #8b966c;
 }
 
 #instruction-text {
-    position: absolute;
-    top: 60%;
-    color: #ff0101;
-    width: 300px;
-    text-align: center;
-    text-transform: capitalize;
-    margin: 0;
-    text-shadow: white;
-
+  position: absolute;
+  top: 60%;
+  color: #ff0101;
+  width: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+  text-shadow: white;
 }
-.scores{
-    display: flex;
-    justify-content: space-between;
-
+.scores {
+  display: flex;
+  justify-content: space-between;
 }
 
 #score {
-    color: yellow;
+  color: yellow;
 }
-#score ,#highScore{
-    font-size: 40px;
-    font-weight: bolder;
-    margin: 10px 0;
+#score,
+#highScore {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px 0;
 }
 #highScore {
-    color: red;
-    display: none;
+  color: red;
+  display: none;
 }
-.game-border-3,#logo {
-    background-color: yellow;
+.game-border-3,
+#logo {
+  background-color: yellow;
+}
+.snake {
+  background-color: green;
+  border: greenyellow;
+  border-radius: 15px;
+}
+.food {
+  background-color: pink;
+  border: blue px solid;
+}
+#logo {
+  position: absolute;
+  top: 20.8%;
+  height: 400px;
+  width: 400px;
 
-}
-.snake{
-    background-color:green;
-    border: greenyellow;
-    border-radius: 15px;
-
-}
-.food{
-    background-color: pink;
-    border: blue px solid;
-}
-#logo{
-    position: absolute;
-    top: 20.8%;
-    height: 400px;
-    width: 400px;
-    
-    margin: 0;
-    opacity: 20%;
+  margin: 0;
+  opacity: 20%;
 }
